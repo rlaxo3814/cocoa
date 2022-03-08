@@ -42,7 +42,7 @@ public class ProjectDAOImpl implements ProjectDAO {
 	@Override
 	public ProjectVO selectProjectById(ProjectVO projectVO) {
 		ProjectVO vo = null;
-		vo = sqlSession.selectOne("mapper.project.selectById", projectVO);
+		vo = sqlSession.selectOne("mapper.project.selectProjectById", projectVO);
 		return vo;
 	}
 

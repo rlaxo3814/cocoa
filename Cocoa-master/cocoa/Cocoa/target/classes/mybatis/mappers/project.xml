@@ -47,7 +47,7 @@
 	</select>
 
 	<!-- 프로젝트 글 상세 조회 -->
-	<select id="selectById" resultType="projectVO">
+	<select id="selectProjectById" resultType="projectVO">
       <![CDATA[
          select * from projectTBL where leader=#{leader} and projectNO=#{projectNO}
       ]]>
